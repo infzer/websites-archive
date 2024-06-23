@@ -1,0 +1,60 @@
+body {
+  top: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;  
+  animation: intro;
+  animation-duration: 9s;
+}
+
+@keyframes intro {
+  
+  0% {
+    display: none;
+  }
+  100% {
+    display: none;
+  }
+
+}
+
+.container li{
+  text-align: center;
+  padding: 2px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
