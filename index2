@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESORT</title>
+    <link href="style2.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="https://resortclo.com/cdn/shop/files/favicon.png?crop=center&height=32&v=1716155580&width=32">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" ></script>
+
+</head>
+
+<body>
+
+    <video src="https://cdn.shopify.com/videos/c/vp/fe1492be37074a0dbfaa8783ec0ebd5a/fe1492be37074a0dbfaa8783ec0ebd5a.HD-1080p-7.2Mbps-29487820.mp4" type="video/mp4" autoplay loop muted ></video>
+  
+    <div class="container">   
+      
+      <ul>
+        <li><img alt="logo" src="https://resortclo.com/cdn/shop/files/resortlogo.png?v=1716155384&width=400" width="50%" height="50%"></li>
+        <li id="hour"></li>
+        <li><a aria-label="link" href="home.html">HOME</a></li>
+        <li><a aria-label="link" href="lookbook.html">LOOKBOOK</a></li>
+        <li><a aria-label="link" href="about.html">ABOUT</a</li>
+      </ul>
+      
+    </div>
+
+    
+    <script>
+        function displayCurrentHour() {
+            // Get the current hour using Moment.js
+            var currentHour = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+            
+            // Display the current hour in the HTML element
+            document.getElementById("hour").innerText = currentHour;
+        }
+
+        // Call the function to display the current hour
+        displayCurrentHour();
+        setInterval(displayCurrentHour, 100);
+    </script>
+
+</body>
+</html>
